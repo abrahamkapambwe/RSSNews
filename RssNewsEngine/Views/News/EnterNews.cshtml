@@ -1,0 +1,91 @@
+﻿@model RssNewsEngine.Models.NewsComponents
+@{
+    ViewBag.Title = "EnterNews";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>
+    EnterNews</h2>
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")"></script>
+<style type="text/css">
+    .multi-line
+    {
+        height: 20em;
+        width: 40em;
+    }
+</style>
+@using (Html.BeginForm("EnterNews", "News", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>NewsComponents</legend>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Source)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Source)
+            @Html.ValidationMessageFor(model => model.Source)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.NewsItem)
+        </div>
+        <div class="editor-field">
+            <div>
+                @Html.EditorFor(model => model.NewsItem, new { @class = "newsarticle" })
+            </div>
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SummaryContent)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.SummaryContent)
+            @Html.ValidationMessageFor(model => model.SummaryContent)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.NewsHeadline)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.NewsHeadline)
+            @Html.ValidationMessageFor(model => model.NewsHeadline)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.NewsPhotoUrl)
+        </div>
+        <div class="editor-field">
+            <input type="file" name="PhotoUrl" id="PhotoUrl" /><br />
+            <input type="file" id="fileUpload1" name="fileUpload" size="23" />
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Imagelabel)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Imagelabel)
+            @Html.ValidationMessageFor(model => model.Imagelabel)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Publish)
+        </div>
+        <div class="editor-field">
+            @Html.DropDownListFor(model => model.Publish, new SelectList(new[] { "Yes", "No" }))
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Category)
+        </div>
+        <div class="editor-field">
+            @Html.DropDownListFor(model => model.Category, new SelectList(new[] { "Politics", "Business", "Technology", "Entertainment", "Sport", "LifeStyle" }), "Choose")
+        </div>
+        <div class="editor-label">
+            Country
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("Country", new SelectList(new[] { "Kenya", "Malawi", "Tanzania", "Uganda", "Zambia", "Zimbabwe" }), "Choose")
+        </div>
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
