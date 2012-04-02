@@ -13,7 +13,7 @@
 namespace RssNewsEngine
 {
     using System;
-    using System.Collections.Generic;
+   
     using System.Web;
 
     using Amazon.SimpleDB;

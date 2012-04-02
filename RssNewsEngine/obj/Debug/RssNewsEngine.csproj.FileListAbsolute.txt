@@ -19,17 +19,6 @@ C:\Users\Abraham\Realestate\Realestate\RssNewsEngine\RssNewsEngine\bin\Telerik.W
 C:\Users\Abraham\Realestate\Realestate\RssNewsEngine\RssNewsEngine\obj\Debug\RssNewsEngine.csprojResolveAssemblyReference.cache
 C:\RssNews\RssNewsEngine\bin\RssNewsEngine.dll
 C:\RssNews\RssNewsEngine\bin\RssNewsEngine.pdb
-C:\RssNews\RssNewsEngine\bin\Microsoft.Web.Infrastructure.xml
-C:\RssNews\RssNewsEngine\bin\System.Web.Helpers.xml
-C:\RssNews\RssNewsEngine\bin\System.Web.Mvc.xml
-C:\RssNews\RssNewsEngine\bin\System.Web.Razor.xml
-C:\RssNews\RssNewsEngine\bin\System.Web.WebPages.xml
-C:\RssNews\RssNewsEngine\bin\System.Web.WebPages.Deployment.xml
-C:\RssNews\RssNewsEngine\bin\System.Web.WebPages.Razor.xml
-C:\RssNews\RssNewsEngine\bin\Telerik.Web.Mvc.pdb
-C:\RssNews\RssNewsEngine\bin\Telerik.Web.Mvc.xml
 C:\RssNews\RssNewsEngine\obj\Debug\RssNewsEngine.dll
 C:\RssNews\RssNewsEngine\obj\Debug\RssNewsEngine.pdb
-C:\RssNews\RssNewsEngine\bin\AddExtension.dll
-C:\RssNews\RssNewsEngine\bin\NuGet.Core.dll
 C:\RssNews\RssNewsEngine\obj\Debug\RssNewsEngine.csprojResolveAssemblyReference.cache
